@@ -14,10 +14,10 @@ $ run_image.sh
 
 **Description**:
 
-| Items           | Version  |      base image       | Comments                |
-|-----------------|----------|-----------------------|-------------------------|
-| buildpack-deps  | buster   |                       | debian base image       |
-| shugaoye/debian | latest   | buildpack-deps:buster | Debian base image       |
+| Items           | Version  |  base image    | Comments        |
+|-----------------|----------|----------------|-----------------|
+| node            | 16       |                | Node.js image   |
+| shugaoye/debian | latest   |  node:16       | Node.js image   |
 
 
 [1]: https://registry.hub.docker.com/_/buildpack-deps/

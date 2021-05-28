@@ -1,9 +1,14 @@
 # .NET SDK and Mono image
 # Please refer to README.md for more information.
 
-FROM buildpack-deps:buster
+FROM node:16
 
 LABEL maintainer="shugaoye@yahoo.com"
+
+RUN apt-get update && \
+	apt-get install -y sudo && \
+	apt-get clean && \
+	rm -rf /var/lib/apt/lists/*
 
 RUN echo 'root:root' | chpasswd
 
