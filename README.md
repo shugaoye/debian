@@ -1,23 +1,23 @@
-# Docker images based on [Ubuntu][1]
+# Docker images based on [Debian][1]
 
 ```bash
-$ git clone https://github.com/shugaoye/ubuntu.git
+$ git clone https://github.com/shugaoye/debian.git
 $ make
 $ ./run_image.sh
 ```
 or
 
 ```bash
-$ docker pull shugaoye/ubuntu:latest
+$ docker pull shugaoye/debian:latest
 $ run_image.sh
 ```
 
 **Description**:
 
-| Items           | Version  |  base image  | Comments                |
-|-----------------|----------|--------------|-------------------------|
-| ubuntu          | focal    |              | ubuntu:focal base image |
-| shugaoye/ubuntu | java     | ubuntu:focal | Ubuntu and Java         |
+| Items           | Version  |      base image       | Comments                |
+|-----------------|----------|-----------------------|-------------------------|
+| buildpack-deps  | buster   |                       | debian base image       |
+| shugaoye/debian | latest   | buildpack-deps:buster | Debian base image       |
 
 
-[1]: https://hub.docker.com/_/ubuntu
+[1]: https://registry.hub.docker.com/_/buildpack-deps/

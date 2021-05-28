@@ -1,5 +1,5 @@
 DOCKER = docker
-IMAGE = shugaoye/ubuntu:latest
+IMAGE = shugaoye/debian:latest
 
 dev: Dockerfile
 	$(DOCKER) build -t $(IMAGE) .
