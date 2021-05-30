@@ -25,7 +25,7 @@ export USE_CCACHE=1
 
 msg="docker_entrypoint: Creating user UID/GID [$USER_ID/$GROUP_ID]" && echo $msg
 # mkdir -p /home/$USERNAME
-groupadd -g $GROUP_ID -r $USERNAME
+#groupadd -g $GROUP_ID -r $USERNAME
 useradd -m -d /home/$USERNAME -u $USER_ID -g $GROUPNAME -G tty -s /bin/bash $USERNAME
 # chown $USER_ID:$GROUP_ID /home/$USERNAME
 echo "$msg - done"
